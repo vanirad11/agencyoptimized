@@ -6,13 +6,6 @@ if (toggle && menu) toggle.addEventListener('click', () => {
   toggle.setAttribute('aria-expanded', open);
 });
 
-document.querySelectorAll('.nav-menu a').forEach(link => {
-  link.addEventListener('click', () => {
-    menu.classList.remove('open');
-    toggle.setAttribute('aria-expanded', 'false');
-  });
-});
-
 const form = document.querySelector('#contact-form');
 const status = document.querySelector('.form-status');
 
